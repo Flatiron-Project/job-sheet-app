@@ -3,17 +3,24 @@ import { View, Text, StyleSheet } from 'react-native'
 
 const HomeScreen = () => {
   return (
-    <View style={styles.container}>
-      <Text>Home Screen</Text>
+    <View style={styles.view}>
+      <Text style={styles.header}>Home Screen</Text>
     </View>
   )
 }
 
 const styles = StyleSheet.create({
-  cardContainer: {
+  view: {
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'space-between',
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    height: '100%',
+  },
+  header: {
+    fontSize: 35,
+    color: 'green',
+    fontWeight: 'bold',
   }
 })
 
