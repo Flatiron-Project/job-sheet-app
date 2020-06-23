@@ -1,16 +1,12 @@
-import React from 'react'
+import React from 'react';
 import { View, Text, StyleSheet } from 'react-native'
-import { Button } from 'react-native-material-ui'
 
-const HomeScreen = ({ navigation }) => {
+const SecondScreen = () => {
   return (
     <View style={styles.view}>
-      <Text style={styles.header}>Home Screen</Text>
-      <Button raised primary text="Button" onPress={() => {
-        navigation.navigate('Second')} 
-      }/>
+      <Text style={styles.header}>Second Screen</Text>
     </View>
-  )
+  );
 }
 
 const styles = StyleSheet.create({
@@ -23,9 +19,9 @@ const styles = StyleSheet.create({
   },
   header: {
     fontSize: 35,
-    color: 'green',
+    color: 'red',
     fontWeight: 'bold',
   }
 })
-
-export default HomeScreen
+ 
+export default SecondScreen;
