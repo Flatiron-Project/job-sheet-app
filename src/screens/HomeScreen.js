@@ -1,10 +1,12 @@
 import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
+import { Button } from 'react-native-material-ui'
 
 const HomeScreen = () => {
   return (
     <View style={styles.view}>
       <Text style={styles.header}>Home Screen</Text>
+      <Button raised primary text="Button" />
     </View>
   )
 }
