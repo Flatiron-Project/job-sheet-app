@@ -9,7 +9,7 @@ const navigator = createStackNavigator(
     Second: SecondScreen,
   },
   {
-    initalRouteName: 'Home',
+    initalRouteName: 'Orbit',
     defaultNavigationOptions: {
       title: 'Job Sheet',
     },
