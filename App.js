@@ -2,12 +2,12 @@ import { createAppContainer } from 'react-navigation'
 import { createStackNavigator } from 'react-navigation-stack'
 import HomeScreen from './src/screens/HomeScreen'
 
-const navigator = craeteStackNavigator(
+const navigator = createStackNavigator(
   {
   Home: HomeScreen,
   },
   {
-    initalRouteName: Home,
+    initalRouteName: 'Home',
     defaultNavigationOptions: {
       title: 'Job Sheet',
     },
