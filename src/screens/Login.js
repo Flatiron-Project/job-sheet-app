@@ -2,6 +2,7 @@ import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 import { LinearGradient } from 'expo-linear-gradient'
 import { TextInput } from 'react-native-paper'
+import { theme } from '../styles/theme'
 
 const Login = () => {
   return (
@@ -41,10 +42,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   header: {
-    marginTop: '25%',
+    marginTop: '45%',
     fontSize: 48,
     letterSpacing: 15,
-    color: '#7F39FB',
+    color: '#03DAC5',
   },
   form: {
     marginTop: '25%',
