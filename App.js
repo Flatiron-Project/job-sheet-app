@@ -1,12 +1,12 @@
 import { createAppContainer } from 'react-navigation'
 import { createStackNavigator } from 'react-navigation-stack'
 import HomeScreen from './src/screens/HomeScreen'
-import SecondScreen from './src/screens/SecondScreen'
+import Login from './src/screens/Login'
 
 const navigator = createStackNavigator(
   {
     Home: HomeScreen,
-    Second: SecondScreen,
+    Login: Login,
   },
   {
     initalRouteName: 'Orbit',
