@@ -1,14 +1,14 @@
 import React from 'react'
-import { View, Text, StyleSheet } from 'react-native'
-import { Button } from 'react-native-material-ui'
+import { View, Text, StyleSheet, Button } from 'react-native'
+import { TouchableOpacity } from 'react-native-gesture-handler'
 
 const HomeScreen = ({ navigation }) => {
   return (
     <View style={styles.view}>
       <Text style={styles.header}>Home Screen</Text>
-      <Button raised primary text="Button" onPress={() => {
+      <TouchableOpacity onPress={() => {
         navigation.navigate('Login')} 
-      }/>
+      }><Text>Login</Text></TouchableOpacity>
     </View>
   )
 }
