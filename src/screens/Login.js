@@ -1,9 +1,9 @@
-import React from 'react';
+import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 import { LinearGradient } from 'expo-linear-gradient'
+import { TextInput } from 'react-native-paper'
 
 const Login = () => {
-
   return (
     <View style={styles.loginView}>
       <LinearGradient
@@ -11,9 +11,25 @@ const Login = () => {
         style={styles.linearGradient}
       >
         <Text style={styles.header}>ORBIT</Text>
+        <View style={styles.form}>
+          <TextInput
+            mode='flat'
+            label='Email'
+            style={styles.input}
+            underlineColor='#6E00EE'
+            selectionColor='white'
+          />
+          <TextInput
+            password
+            mode='flat'
+            label='Password'
+            style={styles.input}
+            underlineColor='#6E00EE'
+          />
+        </View>
       </LinearGradient>
     </View>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
@@ -29,7 +45,16 @@ const styles = StyleSheet.create({
     fontSize: 48,
     letterSpacing: 15,
     color: '#7F39FB',
-  }
+  },
+  form: {
+    marginTop: '25%',
+    width: '100%',
+    alignItems: 'center',
+  },
+  input: {
+    width: '75%',
+    backgroundColor: 'transparent',
+  },
 })
- 
-export default Login;
+
+export default Login
