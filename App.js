@@ -6,7 +6,12 @@ import Login from './src/screens/Login'
 const navigator = createStackNavigator(
   {
     Home: HomeScreen,
-    Login: Login,
+    Login: {
+      screen: Login,
+      navigationOptions: {
+        headerShown: false,
+      }
+    },
   },
   {
     initalRouteName: 'Orbit',
