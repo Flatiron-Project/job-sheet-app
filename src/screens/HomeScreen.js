@@ -1,14 +1,15 @@
 import React from 'react'
-import { View, Text, StyleSheet, Button } from 'react-native'
+import { View, Text, StyleSheet } from 'react-native'
 import { TouchableOpacity } from 'react-native-gesture-handler'
+import { Button } from 'react-native-paper'
 
 const HomeScreen = ({ navigation }) => {
   return (
     <View style={styles.view}>
       <Text style={styles.header}>Home Screen</Text>
-      <TouchableOpacity onPress={() => {
+      <Button mode="contained" onPress={() => {
         navigation.navigate('Login')} 
-      }><Text>Login</Text></TouchableOpacity>
+      }><Text>Login</Text></Button>
     </View>
   )
 }
