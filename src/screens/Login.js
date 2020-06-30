@@ -10,7 +10,7 @@ const Login = () => {
         colors={['#6200EE', '#03DAC5']}
         style={styles.linearGradient}
       >
-        <Text style={styles.header}>Login</Text>
+        <Text style={styles.header}>ORBIT</Text>
       </LinearGradient>
     </View>
   );
