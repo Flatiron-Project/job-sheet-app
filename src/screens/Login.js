@@ -6,8 +6,13 @@ import { theme } from '../styles/theme'
 import { vh } from 'react-native-expo-viewport-units'
 
 const Login = () => {
-  const [email, setEmail] = useState('')
+  const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
+
+  const loginHandler = () => {
+    console.log(`username: ${username}`)
+    console.log(`password: ${password}`)
+  }
 
   return (
     <View style={styles.loginView}>
@@ -18,12 +23,12 @@ const Login = () => {
         <Text style={styles.header}>ORBIT</Text>
         <View style={styles.form}>
           <TextInput
-            value={email}
+            value={username}
             mode='flat'
-            label='Email'
+            label='Username'
             style={styles.input}
             underlineColor='#03DAC5'
-            onChangeText={text => setEmail(text)}
+            onChangeText={text => setUsername(text)}
             theme={theme}
           />
           <TextInput
@@ -38,7 +43,7 @@ const Login = () => {
           />
         </View>
         <View style={styles.buttonGroup}>
-          <Button mode='contained' style={styles.button} labelStyle={styles.buttonText}>LOG IN</Button>
+          <Button mode='contained' style={styles.button} labelStyle={styles.buttonText} onPress={loginHandler}>LOG IN</Button>
           <Button mode='contained' style={styles.button} labelStyle={styles.buttonText}>SIGN UP</Button>
           <Button mode='contained' style={styles.button} color='white'>Log In with Google</Button>
         </View>
